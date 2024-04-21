@@ -1,0 +1,41 @@
+.title {
+    writing-mode: vertical-lr;
+    margin-top: 50px;
+}
+
+.container-box {
+    width: 30px;
+    height: 600px;
+    position: relative;
+    margin-left: 300px;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.box {
+    width: 100px;
+    background-color: orange;
+    position: absolute;
+    height: 600px;
+    top: 0px;
+    opacity: 0;
+}
+
+.container-box:hover .box {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.min-box {
+    background-color: orange;
+    width: 30px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-box:hover .min-box {
+    opacity: 0;
+}
