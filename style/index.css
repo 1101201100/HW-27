@@ -1,6 +1,7 @@
 .title {
     writing-mode: vertical-lr;
     margin-top: 50px;
+    color: white;
 }
 
 .container-box {
@@ -14,21 +15,24 @@
 }
 
 .box {
-    width: 100px;
-    background-color: orange;
+    width: 150px;
+    background-color: rgb(155, 148, 133);
     position: absolute;
     height: 600px;
     top: 0px;
+    left: -15px;
     opacity: 0;
+    transition: transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .container-box:hover .box {
     opacity: 1;
-    transition: all 0.5s ease-in-out;
+    transform: translate(20px);
 }
 
 .min-box {
-    background-color: orange;
+    background-color: rgb(155, 148, 133);
     width: 30px;
     height: 600px;
     display: flex;
@@ -39,3 +43,22 @@
 .container-box:hover .min-box {
     opacity: 0;
 }
+
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 170px;
+    row-gap: 30px;
+    list-style: circle;
+}
+
+.text:hover {
+    color: orange;
+}
+
+.text {
+    color: white;
+} 
